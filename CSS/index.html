@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <h1 class="cabessario">Cascading Style Sheets</h1>
+
+    <h2>Aula 1 -CSS in line</h2>
+    <p class="resumo">CSS dentro de TAGs.</p>
+
+    <h2>Aula 2 - CSS Interno</h2>
+    <p class="resumo">CSS dentro do corpo do site.</p>
+
+    <h2>Aula 3 - CSS Externo</h2>
+    <p class="resumo">CSS dentro do arquivo CSS trazido para o site pela tag (link rel="stylesheet" href="xxxxx.css")
+    </p>
+    <h2 style="padding: none;">Aula 4 - Seletores e Classes</h2>
+    <p class="resumo">Classes, seletores, #id e *.</p>
+    <!-- 
+        * - todas as tags receberão as propriedades.
+
+        h1,p,body - usar virgula para mais de uma tag receber as mesmas propriedades.
+
+        class="XXXX" - Propriedades padrão para estilizar as tags usando essa determinada class. Para trabalhar com class, priemiro usar ponto no css ex: ".XXXX{...}".
+
+        id="xxxx" - com o id nós nomeamos uma determinada tag para trabalhar com ela separadamente, importante o nome não comçar com números para não dar erro no código e tambem não ter duas tags com o mesmo nome. Para trabalhar com IDs no css começamos com rastag(#) ex: "#xxxx{...}".
+      -->
+    <h2>Aula 5 - Propriedade Color</h2>
+    <p class="resumo">Define a cor do texto</p>
+    <!--
+color - cor do texto
+    -->
+    <h2>Aula 6 - Propriedade Background</h2>
+    <p class="resumo">Edição de cor ou imagem para o fundo do site.</p>
+    <!--
+        height: xxxpx
+        background-color:
+        background-image: url("xxxx")
+        background-size: contain/cover/100%...
+        background-repeat: no-repeat/repeat-x/repeat-y
+        background-position:center/top/left/right...
+
+        TUDO JUNTO AGRUPADO(short end)
+        background: url("xxx") no-repeat center ...
+        (esse tem que ser separado)background-size -->
+    <h2>Aula 7 - Propriedade Border</h2>
+    <p class="resumo" style="margin-bottom: 5px;">Edição e estilização de bordas.</p>
+    <!--
+       EX: border: 1px solid black;
+
+       Tipos de bordas: solid(padrão), dotted(pontilhado),dashed(trassado),double(dupla),groove, ridge, inset(fora), outset(dentro), none, hidden(oculta).
+
+       border-left/right/top/bottom.
+
+       border-radius:5% OU 5px;
+    -->
+
+    <br>
+    <h4 id="biscoito">Border Test</h4><br>
+
+
+    <h2>Aula 8 - Propriedade Margin</h2>
+    <p class="resumo">Tamanho de margem em objetos.</p>
+    <!--
+        EX: margin-top/bottom/left/right:20px;
+
+        Margem agrupado
+        margin:50px 40px 30px 40px;(top right bottom left)
+    -->
+    <h2>Aula 9 - Propriedade Padding e Criando um Botão Simples</h2>
+    <p class="resumo">Padding e link com margem(pading). Espassamento dentro do objeto.<br><br>
+        <a class="botao" href="https://www.youtube.com/playlist?list=PL2Fdisxwzt_f5C7Mv0kg1EAHhy2VJLf1c"
+            target="_blank">Curso CSS</a>
+    </p>
+    <!--
+            EX: padding-bottom:20px;
+            Padding agrupado
+        padding:50px 40px 30px 40px;(top right bottom left)
+        
+    -->
+
+    <h2>Aula 10 - Propriedade Width e Height</h2>
+    <p class="resumo">Largura e Altura para qualquer objeto.</p>
+    <!--
+        height
+        width
+        max-width - especifica a largura maxima
+    -->
+    <h2>Aula 11 - Propriedade Text</h2>
+    <p class="resumo">Alinhamento, direção e decoração de texto.</p>
+    <!--
+        TEXT-ALIGN = Alinhamento de texto.
+            - center - 
+            - justify - 
+            - left - 
+            - right - 
+        DIRECTION = Sentido da direção do texto letras invertidas.
+            - rtl - right to left
+            - ltr - left to right
+        UNICODE-BIDI = 
+            - bidi-override - texto ao contrario de tras pra frente
+       TEXT-DECORATION = 
+            - none - tirar toda decoração de texto 
+            - overline - linha em cima do texto
+            - underline -  sublinhado
+            - line-through - riscado
+        TEXT-TRANSFORM = transformações no texto.
+            - uppercase - todo o texto com letras maiusculas
+            - lowercase - todo o texto com letra minuscula
+            - capitalize - toda primeira letra das palavras maiuscula
+        TEXT-INDENT = recuar a primeira palavra (criar um espaço) para criar paragrafos.
+        LETTER-SPACING = espaçamento entre as letras, pode ser usado valores negativos.
+        LINE-HEIGHT: 1.8; = espaçamento na altura das linhas.
+        WORD-SPACING = espaçamento entre palavras.
+-->
+    <h2>Aula 12 - Propriedade Font</h2>
+    <p class="resumo">Alterando fontes, importando e ajustando-as
+        <br><span class="fonttest">Chocolate</span>
+    </p>
+    <!--
+    FONT-FAMILY = adicionar fontes do computador.
+    FONT-SIZE = tamanho da font px, large, small etc
+    
+    para colocar font externa do google, exemplo:
+
+    @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Kablammo&family=Tilt+Prism&family=Ysabeau+Infant:wght@1&display=swap');
+
+    FONT-STYLE = italic, oblique, normal,
+    FONT-WEIGHT = grossura da font
+        bolder - negrito
+-->
+
+    <h2>Aula 13 - Estilizção de Links</h2>
+    <p class="resumo">
+        Estilizando links e propriedade Cursor.
+    <div>
+        <a class="botao1" href="#">Link 1</a><a class="botao2" href="#">Link 2</a><a class="botao3" href="#">Link
+            3</a>
+    </div>
+    </p>
+
+    <h2>Aula 14 - Propriedade Display</h2>
+    <p class="resumo">Display tipo BLOCK, INLINE, INLINE-BLOCKe, NONE e visibility</p>
+    <!--
+     EX: display:inline/block/inline-block/none;
+        BLOCO
+        - ocupa toda a extenção da página.
+        (div, h1~6, p, form, header,footer,scection, li)
+
+        INLINE 
+        - não ocupa toda a extenção, é de acondo com o texto ou o elemento da tag.
+        (a,span,img)
+
+        NONE
+        - O código fica ativo mas não aparece na pagina, mas pode ser usado para ativar eventos.
+
+        (OBS no display INLINE os elementos de comportam como se fossem palavras e para tirar esse espaço que fica entre eles usamos o INLINE-BLOCK) 
+
+        Para ocultar e o espaço continuar sendo preenchido usamos:
+        style="visibility: hidden;"
+    -->
+    <h2>Aula 15 - Propriedade Max-Width</h2>
+    <p class="resumo">Responsável para a tag se ajustar ao tamanho da página podendo ter valores menores mas tendo um
+        valor máximo
+        pré
+        determinado. Assim o site fica mais responsivo em telas menores.</p>
+    <!-- 
+        EX: max-width: 800px;
+    -->
+    <h2>Aula 16 - Propriedade Position</h2>
+    <p class="resumo">Posição dos elementos em relação a tela ou a tag ancestral. Static, relative, fixed, absolute e
+        sticky.</p>
+    <!--
+        Static - Posicionameto padrão dos elementos.
+
+        Relative - Posicionamento relativo de onde o elemento se encontra. para essa tag devemos utilizar em conjunto o width, height, top, down, left ou right.
+
+        (z-index: Numero;) determina o eixo Z dos elementos (quem esta a frente e atras)
+
+        Fixed - Elemento fica fixo na tela independente da rolagem.
+
+        Absolute - Determina o posicionamento em relação a tag "ancestral(que esta dentro)" 
+
+        Sticky - "gruda" o elemento na posição determinada
+    -->
+    <h2>Aula 17 - Propriedade Overflow</h2>
+    <p class="resumo">Determina o comportamento do elemento quando o mesmo é maior que a tag a qual ele se encontra. O
+        Overflow só
+        funcionará determimando o height da tag.</p>
+    <!--
+    EX:
+    height: 200px;
+    overflow:visible/hidden/scroll/auto;
+
+    visible - padrão, mostra o conteúo mesmo que utrapasse o tamanho.
+    hidden - oculta o conteudo que ultrapasssa o tamanho.
+    scroll - adiciona barra de rolagem.
+    auto - adiciona barra de rolagem SE NECESSARIO automaticamente.
+
+    *podemos usar o overflow na tag body para ocultar a rolagem da pagina.
+    *podemos utilizar "overflow-x ou y" para determinar o comportamento da rolagem em eixos separadamente.
+-->
+    <h2>Aula 18 - Propriedade Float</h2>
+    <p class="resumo">Faz um elemento flutuar na tag, assim o texto percorre o elemento. Combinando com overflow:auto, a
+        div fica no
+        tamanho necessario para contornar o elemento.</p>
+    <!--
+            usando o CLEAR:both em um titulo ele ignora o seguimento/a flotuação do fleat e continua a baixo.
+
+            usando float em UL ou OL vc consegue separar um item porque ele estará flutuando na lista.
+        -->
+    <h2>Aula 19 - Propriedade Opacity</h2>
+    <p class="resumo">Determina a opacidade de elementos.</p>
+    <!--
+        EX: Opacity: 0.5;
+        0.1 = 10% de opacidade
+        0.5 = 50% de opacidade
+        1 = 100%
+    -->
+    <h2>Aula 20 - Efeito Dropdown</h2>
+    <p class="resumo">Efeito para aparecer opções quando passar o mouse por cima de um elemento.</p><br>
+
+    <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li class="dropdown">
+            <a class="dropbtn" href="#">Link 4</a>
+            <div class="dropdown-content">
+                <a href="#">liga 1</a>
+                <a href="#">liga 2</a>
+                <a href="#">liga 3</a>
+                <a href="#">liga 4</a>
+            </div>
+        </li>
+    </ul><br><br><br>
+
+    <h2>Aula 21 - Especificidade CSS</h2>
+    <p class="resumo">Define a tag com maior prioridade quando mais uma estilização em um elemento é definido. Um
+        exemplo é usar tags
+        diferentes e com estilizações diferentes para o mesmo elemento. A Especificidade definirá qual o mais
+        importante.</p>
+    <!-- 
+        1-Estilo CSS na tag
+        2-id
+        3-seletor + class
+        4-class
+        5-seletor comum
+        OBS: com seletores iguais em varias partes do código, o mais forte será o ultimo.
+    -->
+
+    <h2>Aula 22 - Regra Important</h2>
+    <p class="resumo">Ignora as hierarquias de especificidade definindo a tag como mais importante usando o <strong
+            style="color: blueviolet;">!Important</strong>.
+    </p>
+
+    <h2>Aula 23 - Efeito Gradiente</h2>
+    <p class="resumo">Como usar gradiente no CSS, linear e radial.</p><br>
+    <div class="gradient"></div>
+    <div class="gradient2"></div><br>
+    <!--
+            EX1: background-image: linear-gradient(to right 90deg,blue, black, red);
+            EX2: background-image: radial-gradient(...);
+
+            OBS:
+                -deg - é o grau da inclinação. 
+                -usamos "to right/left/top..." para indicar o sentido do degrade.
+                -tambem podemos usar porcentagem nas cores para ajustar.
+      -->
+    <h2>Aula 24 - Propriedades Text Shadow e Box Shadow</h2>
+    <p class="resumo">Adicionando e editando sombras a texto e div<small>s</small>.</p><br>
+    <!--
+        parametros
+        horizontal, vertical, xxxx, desfoque, cor
+        EX:
+        text-shadow: 2px 3px 5px grey;
+    -->
+    <h1 class="sombra" style=" text-decoration: none;">Criando um card</h1>
+    <div class="card">
+        <img src="merry.jpg" style="width: 100%; height: 60%;">
+        <h3 style="display: inline-block; margin-top: 1%;">Going Merry</h3><br>
+        Navio do Luffy
+    </div><br><br>
+
+    <h2>Aula 25 - Efeitos de Texto</h2>
+    <p class="resumo">
+        Trabalhando com feitos em texto usando white-space e text-overflow.
+    </p><br>
+    <div class="card2">
+        <img src="fabri.jpg" style="width: 100%; height: 110px;">
+        <h3 class="textcard">
+            Fabricio da Silva Menezes
+        </h3>
+        <p class="textcard">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam ea non velit consequuntur sint?
+            Magnam
+            blanditiis quod suscipit autem.
+        </p>
+    </div>
+    <h2>Aula 26 - Media Queries</h2>
+    <p class="resumo">
+        Media Queries são muito importantes para fazer sites responsivos, ou seja, que se adaptem a todos os tipos de
+        resolução.
+    </p><br>
+    <!--
+        /* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {...}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {...}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {...}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {...}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {...}
+    -->
+
+    <h2>Aula 27 - Flexbox</h2>
+    <p class="resumo">
+        Media Q.
+    </p><br>
+
+
+
+
+    <br><br><br>
+    <div class="ficxado">✧<br>Fabricio<br>Menezes<br>✧</div>
+    <br><br><a class="botao" href=" pagina2.html" style="text-decoration: none;">Pagina
+        2</a>
+    <hr>
+</body>
+
+</html>

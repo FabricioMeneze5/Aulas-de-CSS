@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Pacifico&display=swap');
+
+body {
+    background-image: url(ceuEstrelado.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.cabessario {
+    position: sticky;
+    top: 0px;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(83, 26, 137);
+    color: rgb(172, 85, 254);
+    font-family: 'Pacifico', cursive;
+    font-weight: lighter;
+}
+
+.cabessario:hover {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.219);
+}
+
+h2 {
+    display: inline-block;
+    width: 30%;
+    margin: 10px 30% 5px 30%;
+    border-style: double;
+    border-color: rgb(83, 26, 137);
+    color: aliceblue;
+    text-align: center;
+}
+
+h2:hover {
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+.resumo {
+    display: inline-block;
+    width: 500px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    color: rgb(239, 239, 239);
+}
+
+#biscoito {
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 5px;
+    color: white;
+    border-top: 5px dotted orange;
+    border-bottom: 8px double rgb(116, 116, 234);
+    border-right: 10px ridge red;
+    border-left: 10px ridge whitesmoke;
+    border-radius: 10px;
+    background-color: black;
+    padding-inline: 3%;
+
+}
+
+.botao {
+    background-color: rgb(83, 26, 137);
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+
+.botao:hover {
+    opacity: 0.8;
+}
+
+.fonttest {
+    color: chocolate;
+    font-family: 'Kablammo', cursive;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.botao1,
+.botao2,
+.botao3 {
+    margin: 5px;
+    text-decoration: none;
+    padding: 8px;
+}
+
+a.botao1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(65, 131, 0);
+    border: 4px solid rgb(65, 131, 0);
+    cursor: grab;
+    border-radius: 50%;
+}
+
+.botao1:hover {
+    font-weight: bold;
+    color: chartreuse;
+    border: 3px solid chartreuse;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.347);
+}
+
+a.botao2 {
+    font-family: fantasy;
+    letter-spacing: 2px;
+    color: rgb(0, 86, 139);
+    text-decoration: none;
+    background-color: darkorange;
+    border-radius: 10px;
+    border: 4px groove cornflowerblue;
+    cursor: -webkit-zoom-in;
+}
+
+a.botao2:hover {
+    border: 4px ridge cornflowerblue;
+    background-color: rgb(255, 140, 0);
+    text-decoration: underline;
+}
+
+a.botao3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: fuchsia;
+    background-color: azure;
+    border: 4px outset fuchsia;
+}
+
+a.botao3:hover {
+    color: deeppink;
+    border: 4px inset deeppink;
+    background-color: rgb(206, 214, 214);
+    cursor: not-allowed;
+}
+
+.ficxado {
+    position: fixed;
+    bottom: 5%;
+    right: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    line-height: 1;
+    color: rgb(172, 85, 254);
+}
+
+ul {
+    display: inline-block;
+    background: rgb(83, 26, 137);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background: rgb(172, 85, 254);
+}
+
+li .dropdown:hover {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgb(83, 26, 137);
+    width: 74px;
+}
+
+.dropdown-content a {
+    color: white;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.gradient {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    background-image: linear-gradient(50deg, blue, rgb(0, 200, 255)50%, rgb(21, 245, 9), yellow);
+}
+
+.gradient2 {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    background-image: radial-gradient(rgb(236, 65, 236), rgb(193, 130, 238), rgb(153, 57, 236));
+}
+
+.sombra {
+    color: orangered;
+    text-shadow: 2px 1px 4px white;
+}
+
+.card {
+    display: inline-block;
+    border: solid black 3px;
+    background-color: bisque;
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    box-shadow: 0 2px 8px 0 rgb(154, 154, 154), 0 4px 10px 0 rgba(111, 109, 109, 0.886);
+}
+
+.card2 {
+    display: inline-block;
+    border: solid black 3px;
+    background-color: bisque;
+    width: 150px;
+    height: 200px;
+    padding: 5px;
+
+    object-fit: cover;
+    object-position: center;
+    transition: 200ms transform ease-in-out;
+}
+
+.card2:hover {
+    height: auto;
+}
+
+.card2:hover .textcard {
+    white-space: normal;
+}
+
+.textcard {
+    color: blue blue;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card2:hover img {
+    transform: scale(1.025);
+}
